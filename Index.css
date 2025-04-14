@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #232420;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #181818;
+    color: white;
+    text-align: center;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    flex: 1;
+    
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 30px;
+    
+}
+
+
+
+/* cuối trang */
+.footer {
+    background-color: #000; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+    text-align: center;
+    padding: 10px;
+}
+.contact-link {
+    color: red; /* Đổi màu email và số điện thoại thành trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột vào */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px white;
+}
+.galaxy-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #00c3ff, #ff00ff, #ffcc00, #00ffcc);
+    background-size: 400% 400%;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    animation: galaxyGlow 5s infinite linear;
+  
+}
+
+@keyframes galaxyGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+    
+}
+@keyframes glowEffect {
+  0% {
+      box-shadow: 0px 0px 15px rgba(0, 210, 255, 0.8), 
+                  0px 0px 30px rgba(58, 71, 213, 0.8);
+  }
+  100% {
+      box-shadow: 0px 0px 25px rgba(0, 210, 255, 1), 
+                  0px 0px 50px rgba(58, 71, 213, 1);
+  }
+}
+.search-container {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+}
+.search-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-indent: 10px;
+}
+
+
+
+.search-results {
+    margin-top: 10px;
+    text-align: left;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.software-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.software-item {
+    width: 220px;
+    padding: 30px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.4s;
+    text-decoration: none; 
+    color: white;
+}
+.software-item:hover {
+    transform: scale(1.16);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
